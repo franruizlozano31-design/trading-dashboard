@@ -498,7 +498,7 @@
         async function loadData() {
             try {
                 // Load portfolio
-                const portfolioRes = await fetch('data/portfolio.json');
+                const portfolioRes = await fetch('data/portfolio.json', { cache: 'no-cache' });
                 const portfolio = await portfolioRes.json();
                 
                 document.getElementById('totalCapital').textContent = portfolio.balance.totalWithGains.toFixed(2) + '€';
@@ -520,7 +520,7 @@
                     ? (portfolio.stats.winningTrades / portfolio.stats.totalTrades * 100).toFixed(0) + '%' : '0%';
                 
                 // Load prices first for positions
-                const pricesRes = await fetch('data/prices.json');
+                const pricesRes = await fetch('data/prices.json', { cache: 'no-cache' });
                 const prices = await pricesRes.json();
                 
                 // Render positions with live prices
@@ -618,7 +618,7 @@
                 
                 for (const asset of assets) {
                     try {
-                        const res = await fetch(`analysis/modular/${asset}.json`);
+                        const res = await fetch(`analysis/modular/${asset}.json`, { cache: 'no-cache' });
                         const data = await res.json();
                         modularHtml += renderModularAnalysis(asset, data);
                         

@@ -75,3 +75,16 @@
 [2026-02-07 18:50:01]   M ogs/sync.log
 [2026-02-07 18:50:01] Mensaje de commit: Auto-sync 2026-02-07 18:50:01 | Cambios varios
 [2026-02-07 18:50:01] Agregando cambios...
+[2026-02-07 18:50:01] Haciendo commit...
+[2026-02-07 18:50:01] Commit realizado: [main 4fba9b8] Auto-sync 2026-02-07 18:50:01 | Cambios varios
+ 1 file changed, 11 insertions(+)
+[2026-02-07 18:50:01] Haciendo push a GitHub...
+[2026-02-07 18:50:03] Push exitoso: 
+[2026-02-07 18:50:03] === Auto-sync completado ===
+[2026-02-07 18:50:51] === Iniciando auto-sync ===
+[2026-02-07 18:50:51] Encontrados 3 archivo(s) cambiado(s):
+[2026-02-07 18:50:51]   M ashboard.html
+[2026-02-07 18:50:51]   M logs/cron.log
+[2026-02-07 18:50:51]   M logs/sync.log
+[2026-02-07 18:50:51] Mensaje de commit: Auto-sync 2026-02-07 18:50:51 | Cambios varios
+[2026-02-07 18:50:51] Agregando cambios...
