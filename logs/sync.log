@@ -64,3 +64,14 @@
 [2026-02-07 18:46:26]   M logs/sync.log
 [2026-02-07 18:46:26] Mensaje de commit: Auto-sync 2026-02-07 18:46:26 | Precios actualizados | Portfolio modificado | Configuración modificada
 [2026-02-07 18:46:26] Agregando cambios...
+[2026-02-07 18:46:26] Haciendo commit...
+[2026-02-07 18:46:26] Commit realizado: [main 6d3c065] Auto-sync 2026-02-07 18:46:26 | Precios actualizados | Portfolio modificado | Configuración modificada
+ 5 files changed, 51 insertions(+), 24 deletions(-)
+[2026-02-07 18:46:26] Haciendo push a GitHub...
+[2026-02-07 18:46:27] Push exitoso: 
+[2026-02-07 18:46:27] === Auto-sync completado ===
+[2026-02-07 18:50:01] === Iniciando auto-sync ===
+[2026-02-07 18:50:01] Encontrados 1 archivo(s) cambiado(s):
+[2026-02-07 18:50:01]   M ogs/sync.log
+[2026-02-07 18:50:01] Mensaje de commit: Auto-sync 2026-02-07 18:50:01 | Cambios varios
+[2026-02-07 18:50:01] Agregando cambios...
