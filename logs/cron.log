@@ -11,3 +11,15 @@
 [2026-02-07 18:40:02] Haciendo push a GitHub...
 [2026-02-07 18:40:02] Push exitoso: 
 [2026-02-07 18:40:02] === Auto-sync completado ===
+[2026-02-07 18:45:01] === Iniciando auto-sync ===
+[2026-02-07 18:45:01] Encontrados 2 archivo(s) cambiado(s):
+[2026-02-07 18:45:01]   M ogs/cron.log
+[2026-02-07 18:45:01]   M logs/sync.log
+[2026-02-07 18:45:01] Mensaje de commit: Auto-sync 2026-02-07 18:45:01 | Cambios varios
+[2026-02-07 18:45:01] Agregando cambios...
+[2026-02-07 18:45:01] Haciendo commit...
+[2026-02-07 18:45:01] Commit realizado: [main dfe5d86] Auto-sync 2026-02-07 18:45:01 | Cambios varios
+ 2 files changed, 26 insertions(+)
+[2026-02-07 18:45:01] Haciendo push a GitHub...
+[2026-02-07 18:45:01] Push exitoso: 
+[2026-02-07 18:45:01] === Auto-sync completado ===

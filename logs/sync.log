@@ -49,3 +49,18 @@
 [2026-02-07 18:45:01]   M logs/sync.log
 [2026-02-07 18:45:01] Mensaje de commit: Auto-sync 2026-02-07 18:45:01 | Cambios varios
 [2026-02-07 18:45:01] Agregando cambios...
+[2026-02-07 18:45:01] Haciendo commit...
+[2026-02-07 18:45:01] Commit realizado: [main dfe5d86] Auto-sync 2026-02-07 18:45:01 | Cambios varios
+ 2 files changed, 26 insertions(+)
+[2026-02-07 18:45:01] Haciendo push a GitHub...
+[2026-02-07 18:45:01] Push exitoso: 
+[2026-02-07 18:45:01] === Auto-sync completado ===
+[2026-02-07 18:46:26] === Iniciando auto-sync ===
+[2026-02-07 18:46:26] Encontrados 5 archivo(s) cambiado(s):
+[2026-02-07 18:46:26]   M nalysis/modular/BTC.json
+[2026-02-07 18:46:26]   M data/portfolio.json
+[2026-02-07 18:46:26]   M data/prices.json
+[2026-02-07 18:46:26]   M logs/cron.log
+[2026-02-07 18:46:26]   M logs/sync.log
+[2026-02-07 18:46:26] Mensaje de commit: Auto-sync 2026-02-07 18:46:26 | Precios actualizados | Portfolio modificado | Configuración modificada
+[2026-02-07 18:46:26] Agregando cambios...

@@ -1,9 +1,9 @@
 {
   "asset": "BTC",
   "name": "Bitcoin",
-  "lastUpdate": "2026-02-07T18:11:42+01:00",
-  "price": 58280.83,
-  "change24h": -2.16,
+  "lastUpdate": "2026-02-07T18:44:27+01:00",
+  "price": 58811.65,
+  "change24h": -2.56,
   
   "modules": {
     "news": {
@@ -18,7 +18,7 @@
     },
     "technical": {
       "score": -1,
-      "reasoning": "BTC retrocedió -2.16% desde ayer (58,654→58,281). Pullback en curso tras rally. Corto plazo bajista. Largo plazo alcista.",
+      "reasoning": "BTC retrocedió -2.56% desde ayer (58,654→58,812). Pullback continuando pero recuperando desde mínimos. Corto plazo neutral. Largo plazo alcista.",
       "shortTerm": {
         "timeframe": "24h-7d",
         "score": -2,
@@ -51,8 +51,8 @@
     },
     "momentum": {
       "score": -1,
-      "reasoning": "Momentum negativo. Caída -2.16% en 24h. Volumen normal.",
-      "shortTerm": { "roc_24h": -2.16, "strength": "negativa" },
+      "reasoning": "Momentum negativo pero recuperando. Caída -2.56% en 24h pero subiendo desde mínimos. Volumen normal.",
+      "shortTerm": { "roc_24h": -2.56, "strength": "negativa" },
       "longTerm": { "roc_30d": 12.0, "strength": "positivo" }
     },
     "catalyst": {
@@ -78,7 +78,7 @@
   
   "finalScore": 0.45,
   "decision": "HOLD",
-  "reasoning": "Score +0.45. BTC en pullback -2.16% desde ayer. Tu posición: -0.46% P/L, dentro de lo normal para volatilidad.",
+  "reasoning": "Score +0.45. BTC en pullback -2.56% desde ayer pero recuperando. Tu posición: +0.46% P/L, positiva tras recuperación.",
   
   "recommendation": {
     "action": "MANTENER POSICIÓN",

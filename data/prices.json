@@ -1,15 +1,15 @@
 {
-  "lastUpdate": "2026-02-07T18:37:52+01:00",
+  "lastUpdate": "2026-02-07T18:44:27+01:00",
   "crypto": {
-    "BTC": { "eur": 58280.83, "change24h": -2.16 },
-    "ETH": { "eur": 1731.50, "change24h": -0.44 },
-    "SOL": { "eur": 73.51, "change24h": -0.65 },
-    "LINK": { "eur": 7.49, "change24h": -0.13 },
-    "AAVE": { "eur": 95.67, "change24h": 0.03 }
+    "BTC": { "eur": 58811.65, "change24h": -2.56 },
+    "ETH": { "eur": 1755.04, "change24h": -0.46 },
+    "SOL": { "eur": 74.25, "change24h": -0.65 },
+    "LINK": { "eur": 7.49, "change24h": -1.44 },
+    "AAVE": { "eur": 96.22, "change24h": 0.57 }
   },
   "stocks": {
-    "NVDA": { "usd": 184.50, "eur": 170.83, "change": 6.92 },
-    "TSLA": { "usd": 410.00, "eur": 379.63, "change": 3.10 }
+    "NVDA": { "usd": 185.10, "eur": 171.39, "change": 7.22 },
+    "TSLA": { "usd": 411.50, "eur": 380.93, "change": 3.42 }
   },
   "fx": {
     "EURUSD": 1.08
