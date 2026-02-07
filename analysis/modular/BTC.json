@@ -1,9 +1,9 @@
 {
   "asset": "BTC",
   "name": "Bitcoin",
-  "lastUpdate": "2026-02-07T19:02:29+01:00",
-  "price": 58648.48,
-  "change24h": -2.165,
+  "lastUpdate": "2026-02-07T20:06:12+01:00",
+  "price": 58928.5,
+  "change24h": -0.653,
   "modules": {
     "news": {
       "score": 3,
@@ -29,7 +29,7 @@
     },
     "technical": {
       "score": -1,
-      "reasoning": "BTC retrocedi\u00f3 -2.17% desde ayer. Pullback fuerte. Corto plazo bajista. Largo plazo alcista.",
+      "reasoning": "BTC retrocedi\u00f3 -0.65% desde ayer. Leve correcci\u00f3n. Corto plazo neutral. Largo plazo alcista.",
       "shortTerm": {
         "timeframe": "24h-7d",
         "score": -2,
@@ -62,9 +62,9 @@
     },
     "momentum": {
       "score": -1,
-      "reasoning": "Momentum negativo. Ca\u00edda -2.17% en 24h. Volumen normal.",
+      "reasoning": "Momentum negativo pero leve. Ca\u00edda -0.65% en 24h.",
       "shortTerm": {
-        "roc_24h": -2.165,
+        "roc_24h": -0.653,
         "strength": "negativa"
       },
       "longTerm": {
@@ -96,7 +96,7 @@
   },
   "finalScore": 0.45,
   "decision": "HOLD",
-  "reasoning": "Score 0.45. BTC -2.17% desde ayer. Tu posici\u00f3n: +0.17% P/L.",
+  "reasoning": "Score 0.45. BTC -0.65% desde ayer. Tu posici\u00f3n: +0.65% P/L.",
   "recommendation": {
     "action": "MANTENER POSICI\u00d3N",
     "entry_level": 54000,

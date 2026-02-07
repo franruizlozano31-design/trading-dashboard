@@ -1,24 +1,24 @@
 {
-  "lastUpdate": "2026-02-07T19:02:29+01:00",
+  "lastUpdate": "2026-02-07T20:06:12+01:00",
   "crypto": {
     "BTC": {
-      "eur": 58648.48,
-      "change24h": -2.165
+      "eur": 58928.5,
+      "change24h": -0.653
     },
     "ETH": {
-      "eur": 1746.99,
-      "change24h": -0.279
+      "eur": 1777.08,
+      "change24h": 2.434
     },
     "SOL": {
-      "eur": 74.2,
-      "change24h": 0.87
+      "eur": 75.2,
+      "change24h": 2.817
     },
     "LINK": {
-      "eur": 7.52,
-      "change24h": 0.0
+      "eur": 7.6,
+      "change24h": 1.604
     },
     "AAVE": {
-      "eur": 96.23,
+      "eur": 97.22,
       "change24h": 0.0
     }
   },

@@ -128,3 +128,18 @@
 [2026-02-07 19:02:32]   ?? scripts/update_and_sync.sh
 [2026-02-07 19:02:32] Mensaje de commit: Auto-sync 2026-02-07 19:02:32 | Precios actualizados | Portfolio modificado | Configuración modificada
 [2026-02-07 19:02:32] Agregando cambios...
+[2026-02-07 19:02:32] Haciendo commit...
+[2026-02-07 19:02:32] Commit realizado: [main 8faae58] Auto-sync 2026-02-07 19:02:32 | Precios actualizados | Portfolio modificado | Configuración modificada
+ 5 files changed, 333 insertions(+), 55 deletions(-)
+ create mode 100755 scripts/update_and_sync.sh
+[2026-02-07 19:02:32] Haciendo push a GitHub...
+[2026-02-07 19:02:33] Push exitoso: 
+[2026-02-07 19:02:33] === Auto-sync completado ===
+[2026-02-07 20:06:15] === Iniciando auto-sync ===
+[2026-02-07 20:06:15] Encontrados 4 archivo(s) cambiado(s):
+[2026-02-07 20:06:15]   M nalysis/modular/BTC.json
+[2026-02-07 20:06:15]   M data/portfolio.json
+[2026-02-07 20:06:15]   M data/prices.json
+[2026-02-07 20:06:15]   M logs/sync.log
+[2026-02-07 20:06:15] Mensaje de commit: Auto-sync 2026-02-07 20:06:15 | Precios actualizados | Portfolio modificado | Configuración modificada
+[2026-02-07 20:06:15] Agregando cambios...

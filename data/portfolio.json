@@ -4,7 +4,7 @@
     "initialCapital": 100,
     "currency": "EUR",
     "phase": "paper",
-    "lastSync": "2026-02-07T19:02:29+01:00"
+    "lastSync": "2026-02-07T20:06:12+01:00"
   },
   "config": {
     "commissions": {
@@ -24,9 +24,9 @@
   },
   "balance": {
     "available": 49.75,
-    "invested": 50.08580192000001,
-    "total": 99.83580192000001,
-    "totalWithGains": 99.83580192000001
+    "invested": 50.324939,
+    "total": 100.074939,
+    "totalWithGains": 100.074939
   },
   "positions": [
     {
@@ -40,10 +40,10 @@
       "entryValue": 50.0,
       "entryDate": "2026-02-07T13:28:00+01:00",
       "commission": 0.25,
-      "currentPrice": 58648.48,
-      "currentValue": 50.08580192000001,
-      "profitLoss": 0.08580192000000864,
-      "profitLossPct": 0.17160384000001727,
+      "currentPrice": 58928.5,
+      "currentValue": 50.324939,
+      "profitLoss": 0.32493900000000053,
+      "profitLossPct": 0.6498780000000011,
       "status": "open"
     }
   ],
@@ -69,7 +69,7 @@
     "winningTrades": 0,
     "losingTrades": 0,
     "totalCommissions": 0.25,
-    "totalProfitLoss": 0.08580192000000864,
+    "totalProfitLoss": 0.32493900000000053,
     "winRate": 0
   }
 }
