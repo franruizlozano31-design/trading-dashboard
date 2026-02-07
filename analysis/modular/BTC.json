@@ -1,0 +1,90 @@
+{
+  "asset": "BTC",
+  "name": "Bitcoin",
+  "lastUpdate": "2026-02-07T13:59:00+01:00",
+  "price": 58325,
+  "change24h": 3.73,
+  
+  "modules": {
+    "news": {
+      "score": 3,
+      "reasoning": "Dow 50,000 histórico. BlackRock ETF récord. Recuperación post-crash. Sentimiento positivo.",
+      "factors": [
+        {"factor": "Dow 50,000", "impact": "+1"},
+        {"factor": "BlackRock ETF", "impact": "+2"},
+        {"factor": "Recuperación", "impact": "+1"},
+        {"factor": "Volatilidad", "impact": "-1"}
+      ]
+    },
+    "technical": {
+      "score": -1,
+      "reasoning": "BTC retrocedió desde máximo (58,654→58,325). Corto plazo enfriando. Largo plazo alcista.",
+      "shortTerm": {
+        "timeframe": "24h-7d",
+        "score": -2,
+        "indicators": {
+          "zscore": 0.9,
+          "deltaZ": -0.2,
+          "elastic_tension": "baja",
+          "rsi": 56,
+          "macd": "neutral",
+          "bollinger_position": "mitad_banda"
+        },
+        "analysis": "Retroceso desde máximo. Z-score bajando. RSI 56 neutral. Enfriando."
+      },
+      "longTerm": {
+        "timeframe": "30d-90d",
+        "score": 4,
+        "indicators": {
+          "zscore": 0.5,
+          "deltaZ": 0.2,
+          "elastic_tension": "baja",
+          "rsi": 55,
+          "macd": "alcista",
+          "trend_200d": "alcista",
+          "support_key": 52000,
+          "resistance_key": 65000
+        },
+        "analysis": "Tendencia macro alcista. Soporte 52,000€."
+      },
+      "divergence": "Corto enfriando vs largo alcista = Pullback en proceso. Posible oportunidad si baja más."
+    },
+    "momentum": {
+      "score": 2,
+      "reasoning": "Momentum desacelerando. De +4.6% a +3.7%. Volumen normal.",
+      "shortTerm": { "roc_24h": 3.73, "strength": "moderada" },
+      "longTerm": { "roc_30d": 12.0, "strength": "positivo" }
+    },
+    "catalyst": {
+      "score": 2,
+      "reasoning": "ETF flows positivos. Sin evento específico.",
+      "upcoming_events": []
+    },
+    "risk": {
+      "score": -1,
+      "reasoning": "Riesgo moderado. Menos volátil que altcoins.",
+      "metrics": { "volatility": "moderada", "max_drawdown": "10-15%" }
+    }
+  },
+  
+  "calculation": {
+    "news": "3 × 0.25 = 0.75",
+    "technical": "-1 × 0.30 = -0.30",
+    "momentum": "2 × 0.20 = 0.40",
+    "catalyst": "2 × 0.15 = 0.30",
+    "risk": "-1 × 0.10 = -0.10",
+    "total": 1.05
+  },
+  
+  "finalScore": 1.05,
+  "decision": "HOLD",
+  "reasoning": "Score +1.05. BTC enfriando desde máximo. Tu posición: ligeramente negativa pero dentro de lo normal.",
+  
+  "recommendation": {
+    "action": "MANTENER POSICIÓN",
+    "entry_level": 54000,
+    "target": 65000,
+    "stop_loss": 52000,
+    "note": "Pullback esperado. Si baja a 54,000€ sería buena adición."
+  }
+}

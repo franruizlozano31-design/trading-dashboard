@@ -1,0 +1,45 @@
+{
+  "asset": "ETH",
+  "name": "Ethereum",
+  "lastUpdate": "2026-02-07T13:59:00+01:00",
+  "price": 1726.57,
+  "change24h": 6.18,
+  
+  "modules": {
+    "news": {
+      "score": 3,
+      "reasoning": "Recuperación fuerte. Sentimiento positivo general.",
+      "factors": [
+        {"factor": "Recuperación post-crash", "impact": "+2"},
+        {"factor": "Sentimiento positivo", "impact": "+2"},
+        {"factor": "Pérdidas institucionales", "impact": "-1"}
+      ]
+    },
+    "technical": {
+      "score": -3,
+      "reasoning": "Corto plazo sobrecomprado +6.2%. Largo plazo alcista.",
+      "shortTerm": {
+        "timeframe": "24h-7d",
+        "score": -4,
+        "indicators": { "zscore": 2.0, "rsi": 68, "elastic_tension": "alta" },
+        "analysis": "Rebote fuerte +6.2%. RSI 68 cerca sobrecompra."
+      },
+      "longTerm": {
+        "timeframe": "30d-90d",
+        "score": 3,
+        "indicators": { "rsi": 54, "trend_200d": "lateral_alcista", "support_key": 1500, "resistance_key": 2000 },
+        "analysis": "Largo plazo lateral-alcista. Soporte 1,500€."
+      },
+      "divergence": "Corto sobrecomprado vs largo alcista = ESPERAR CORRECCIÓN a 1,600€."
+    },
+    "momentum": { "score": 5, "reasoning": "Momentum muy fuerte +6.2%." },
+    "catalyst": { "score": 1, "reasoning": "Sin catalizadores específicos." },
+    "risk": { "score": -3, "reasoning": "Volatilidad alta tras crash." }
+  },
+  
+  "calculation": { "total": 0.90 },
+  "finalScore": 0.90,
+  "decision": "HOLD",
+  "reasoning": "Corto sobrecomprado. Esperar corrección.",
+  "recommendation": { "action": "ESPERAR", "entry_level": 1600, "target": 1900, "stop_loss": 1500 }
+}

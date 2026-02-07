@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "created": "2026-02-07",
+    "initialCapital": 100,
+    "currency": "EUR",
+    "phase": "paper"
+  },
+  "config": {
+    "commissions": {
+      "bit2me": {
+        "name": "Bit2Me",
+        "type": "crypto",
+        "fee": 0.005,
+        "note": "0.5% por operación"
+      },
+      "degiro": {
+        "name": "DEGIRO",
+        "type": "stocks",
+        "baseFee": 1.00,
+        "note": "1€ + 0.004$/acción"
+      }
+    }
+  },
+  "balance": {
+    "available": 49.75,
+    "invested": 50.00,
+    "total": 99.75,
+    "totalWithGains": 99.75
+  },
+  "positions": [
+    {
+      "id": 1,
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "type": "crypto",
+      "broker": "Bit2Me",
+      "quantity": 0.000854,
+      "entryPrice": 58560,
+      "entryValue": 50.00,
+      "entryDate": "2026-02-07T13:28:00+01:00",
+      "commission": 0.25,
+      "currentPrice": 58560,
+      "currentValue": 50.00,
+      "profitLoss": 0,
+      "profitLossPct": 0,
+      "status": "open"
+    }
+  ],
+  "history": [
+    {
+      "id": 1,
+      "date": "2026-02-07T13:28:00+01:00",
+      "symbol": "BTC",
+      "type": "BUY",
+      "quantity": 0.000854,
+      "price": 58560,
+      "value": 50.00,
+      "commission": 0.25,
+      "broker": "Bit2Me",
+      "result": 0,
+      "note": "Primera operación de prueba. Entrada en rally - contra mi recomendación pero para testear sistema."
+    }
+  ],
+  "stats": {
+    "totalTrades": 1,
+    "openTrades": 1,
+    "closedTrades": 0,
+    "winningTrades": 0,
+    "losingTrades": 0,
+    "totalCommissions": 0.25,
+    "totalProfitLoss": 0,
+    "winRate": 0
+  }
+}

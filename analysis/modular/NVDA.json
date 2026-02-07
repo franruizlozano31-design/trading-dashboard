@@ -1,0 +1,47 @@
+{
+  "asset": "NVDA",
+  "name": "Nvidia",
+  "lastUpdate": "2026-02-07T13:59:00+01:00",
+  "price": 185.41,
+  "priceEUR": 171.68,
+  "change": 7.92,
+  "marketStatus": "cerrado",
+  
+  "modules": {
+    "news": {
+      "score": 5,
+      "reasoning": "Partnership Opentrons (robótica). Plataforma weather forecasting. Liderando rally tech. Earnings 25 Feb.",
+      "factors": [
+        {"factor": "Partnership Opentrons", "impact": "+2"},
+        {"factor": "Weather platform", "impact": "+1"},
+        {"factor": "Earnings 25 Feb", "impact": "+2"}
+      ]
+    },
+    "technical": {
+      "score": -4,
+      "reasoning": "Extremadamente sobrecomprado +8%.",
+      "shortTerm": {
+        "timeframe": "1d-7d",
+        "score": -6,
+        "indicators": { "zscore": 2.5, "rsi": 78, "elastic_tension": "extrema" },
+        "analysis": "+8% brutal. RSI 78 muy sobrecomprado. Corrección casi segura."
+      },
+      "longTerm": {
+        "timeframe": "30d-90d",
+        "score": 6,
+        "indicators": { "rsi": 62, "trend_200d": "muy_alcista", "support_key": 160, "resistance_key": 210 },
+        "analysis": "Largo plazo MUY alcista. Target $253."
+      },
+      "divergence": "Corto EXTREMO vs largo MUY alcista = ESPERAR $170-175."
+    },
+    "momentum": { "score": 6, "reasoning": "Momentum extremo +8%. Volumen récord." },
+    "catalyst": { "score": 4, "reasoning": "Earnings 25 Feb." },
+    "risk": { "score": -4, "reasoning": "Alto riesgo profit-taking." }
+  },
+  
+  "calculation": { "total": 1.45 },
+  "finalScore": 1.45,
+  "decision": "HOLD",
+  "reasoning": "Esperar corrección a $170-175.",
+  "recommendation": { "action": "ESPERAR CORRECCIÓN", "entry_level": 170, "target": 210, "stop_loss": 160 }
+}

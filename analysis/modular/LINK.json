@@ -1,0 +1,38 @@
+{
+  "asset": "LINK",
+  "name": "Chainlink",
+  "lastUpdate": "2026-02-07T13:59:00+01:00",
+  "price": 7.46,
+  "change24h": 6.10,
+  "source": "screener",
+  
+  "modules": {
+    "news": { "score": 2, "reasoning": "Rally general. Oráculos clave para DeFi." },
+    "technical": {
+      "score": -3,
+      "reasoning": "Corto sobrecomprado +6.1%.",
+      "shortTerm": {
+        "timeframe": "24h-7d",
+        "score": -4,
+        "indicators": { "zscore": 1.9, "rsi": 68, "elastic_tension": "alta" },
+        "analysis": "+6.1%. RSI 68."
+      },
+      "longTerm": {
+        "timeframe": "30d-90d",
+        "score": 3,
+        "indicators": { "rsi": 55, "trend_200d": "lateral_alcista", "support_key": 6.0, "resistance_key": 9.0 },
+        "analysis": "Largo alcista. Soporte 6€."
+      },
+      "divergence": "Esperar corrección a 6.80€."
+    },
+    "momentum": { "score": 5, "reasoning": "+6.1%. Volumen alto." },
+    "catalyst": { "score": 1, "reasoning": "Adopción DeFi." },
+    "risk": { "score": -3, "reasoning": "Volatilidad alta." }
+  },
+  
+  "calculation": { "total": 0.45 },
+  "finalScore": 0.45,
+  "decision": "HOLD",
+  "reasoning": "🔍 SCREENER. Esperar 6.80€.",
+  "recommendation": { "action": "ESPERAR", "entry_level": 6.80, "target": 9.00, "stop_loss": 6.00 }
+}

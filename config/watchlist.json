@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "lastUpdate": "2026-02-07T13:21:00+01:00",
+  
+  "baseWatchlist": {
+    "description": "Activos que SIEMPRE se analizan",
+    "crypto": [
+      {"symbol": "BTC", "name": "Bitcoin", "reason": "Referencia del mercado"},
+      {"symbol": "ETH", "name": "Ethereum", "reason": "#2, proxy del mercado cripto"},
+      {"symbol": "SOL", "name": "Solana", "reason": "Alta volatilidad, buenos swings"}
+    ],
+    "stocks": [
+      {"symbol": "NVDA", "name": "Nvidia", "reason": "Líder AI, muy volátil"}
+    ]
+  },
+  
+  "screenerCriteria": {
+    "description": "Criterios para añadir activos automáticamente",
+    "crypto": {
+      "minChange24h": 5,
+      "minVolume24hEur": 100000000,
+      "maxAssets": 3
+    },
+    "stocks": {
+      "minChange": 4,
+      "minVolume": 50000000,
+      "maxAssets": 2
+    }
+  },
+  
+  "screenerPool": {
+    "description": "Activos que el screener vigila para oportunidades",
+    "crypto": ["ADA", "XRP", "LINK", "AVAX", "DOT", "MATIC", "ATOM", "UNI", "AAVE", "DOGE"],
+    "stocks": ["TSLA", "AMD", "META", "GOOGL", "AAPL", "MSFT", "COIN", "AMZN"]
+  },
+  
+  "currentActive": {
+    "description": "Activos actualmente bajo análisis (base + screener)",
+    "base": ["BTC", "ETH", "SOL", "NVDA"],
+    "screener": ["LINK", "AAVE"],
+    "total": ["BTC", "ETH", "SOL", "NVDA", "LINK", "AAVE"]
+  }
+}

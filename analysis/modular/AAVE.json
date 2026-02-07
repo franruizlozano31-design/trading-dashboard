@@ -1,0 +1,38 @@
+{
+  "asset": "AAVE",
+  "name": "Aave",
+  "lastUpdate": "2026-02-07T13:59:00+01:00",
+  "price": 95.64,
+  "change24h": 6.31,
+  "source": "screener",
+  
+  "modules": {
+    "news": { "score": 3, "reasoning": "Líder DeFi lending. Rally general." },
+    "technical": {
+      "score": -3,
+      "reasoning": "Corto sobrecomprado +6.3%.",
+      "shortTerm": {
+        "timeframe": "24h-7d",
+        "score": -4,
+        "indicators": { "zscore": 2.0, "rsi": 70, "elastic_tension": "alta" },
+        "analysis": "+6.3%. RSI 70 sobrecompra."
+      },
+      "longTerm": {
+        "timeframe": "30d-90d",
+        "score": 4,
+        "indicators": { "rsi": 58, "trend_200d": "alcista", "support_key": 80, "resistance_key": 120 },
+        "analysis": "DeFi recuperándose. Largo alcista."
+      },
+      "divergence": "Esperar 88€."
+    },
+    "momentum": { "score": 5, "reasoning": "Mayor subida +6.3%." },
+    "catalyst": { "score": 2, "reasoning": "DeFi recovery." },
+    "risk": { "score": -4, "reasoning": "DeFi muy volátil." }
+  },
+  
+  "calculation": { "total": 0.75 },
+  "finalScore": 0.75,
+  "decision": "HOLD",
+  "reasoning": "🔍 SCREENER. Líder DeFi. Esperar 88€.",
+  "recommendation": { "action": "ESPERAR", "entry_level": 88, "target": 120, "stop_loss": 78 }
+}

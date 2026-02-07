@@ -1,0 +1,112 @@
+{
+  "type": "stocks",
+  "platform": "DEGIRO",
+  "lastUpdate": "2026-02-07T12:16:00+01:00",
+  "marketSentiment": "bullish",
+  "marketHours": "USA 15:30-22:00 CET | Cerrado ahora",
+  "summary": "Mercado USA cerró histórico ayer: Dow superó 50,000 por primera vez. NVDA +8% liderando tech. Hoy mercado cerrado (sábado). Contexto: sentimiento alcista fuerte, pero posible profit-taking lunes tras rally.",
+  "assets": [
+    {
+      "symbol": "NVDA",
+      "name": "Nvidia",
+      "priceUSD": 185.41,
+      "priceEUR": 171.68,
+      "change": 7.92,
+      "marketCap": "4.51T",
+      "pe": 45.89,
+      "earningsDate": "2026-02-25",
+      "analystTarget": 253.62,
+      "signal": "bullish",
+      "analysis": "Subidón brutal +8%. Momentum pre-earnings (25 Feb). Volumen muy alto. PERO: ya subió mucho, entrar ahora es arriesgado.",
+      "recommendation": "ESPERAR PULLBACK",
+      "entryLevel": 170,
+      "targetLevel": 200,
+      "stopLoss": 160
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "priceUSD": 411.11,
+      "priceEUR": 380.66,
+      "change": 3.50,
+      "marketCap": "1.54T",
+      "pe": 384.21,
+      "earningsDate": "2026-04-21",
+      "analystTarget": 418.81,
+      "signal": "neutral",
+      "analysis": "PE altísimo (384x). Muy cara por fundamentales. Target analistas ($418) ya casi alcanzado. Riesgo alto.",
+      "recommendation": "NO ENTRAR",
+      "entryLevel": 380,
+      "targetLevel": 450,
+      "stopLoss": 360
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple",
+      "priceUSD": 227.50,
+      "priceEUR": 210.65,
+      "change": 1.20,
+      "marketCap": "3.4T",
+      "pe": 28,
+      "earningsDate": "2026-04-30",
+      "analystTarget": 245,
+      "signal": "neutral",
+      "analysis": "Más estable que NVDA/TSLA. Menos volatilidad = menos oportunidad de swing corto. Mejor para largo plazo.",
+      "recommendation": "HOLD LARGO PLAZO",
+      "entryLevel": 215,
+      "targetLevel": 245,
+      "stopLoss": 205
+    },
+    {
+      "symbol": "META",
+      "name": "Meta",
+      "priceUSD": 695.00,
+      "priceEUR": 643.52,
+      "change": 2.10,
+      "marketCap": "1.75T",
+      "pe": 26,
+      "earningsDate": "2026-04-23",
+      "analystTarget": 750,
+      "signal": "neutral",
+      "analysis": "Sólida. AI play + advertising. Menos volátil que NVDA. Decente para swing si corrige.",
+      "recommendation": "VIGILAR",
+      "entryLevel": 650,
+      "targetLevel": 750,
+      "stopLoss": 620
+    },
+    {
+      "symbol": "COIN",
+      "name": "Coinbase",
+      "priceUSD": 285.00,
+      "priceEUR": 263.89,
+      "change": 4.50,
+      "marketCap": "72B",
+      "pe": 35,
+      "earningsDate": "2026-02-20",
+      "analystTarget": 320,
+      "signal": "bullish",
+      "analysis": "Proxy del mercado cripto en bolsa. Si cripto sube, COIN sube. Earnings pronto (20 Feb). Volátil.",
+      "recommendation": "VIGILAR",
+      "entryLevel": 260,
+      "targetLevel": 320,
+      "stopLoss": 245
+    }
+  ],
+  "opportunities": [
+    {
+      "asset": "NVDA",
+      "type": "swing pre-earnings",
+      "reason": "Earnings 25 Feb. Momentum fuerte. PERO esperar pullback a $170-175.",
+      "risk": "medio-alto",
+      "potentialReturn": "10-15%"
+    },
+    {
+      "asset": "COIN",
+      "type": "swing cripto-proxy",
+      "reason": "Si cripto sigue alcista, COIN debería seguir. Earnings 20 Feb catalizador.",
+      "risk": "alto",
+      "potentialReturn": "10-20%"
+    }
+  ],
+  "conclusion": "Mercado histórico ayer (Dow 50,000+). NVDA +8% brutal. LUNES: alto riesgo de profit-taking tras rally. NO ENTRAR AHORA — esperar corrección. NVDA earnings 25 Feb catalizador próximo."
+}

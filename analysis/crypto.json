@@ -1,0 +1,138 @@
+{
+  "type": "crypto",
+  "platform": "Bit2Me",
+  "lastUpdate": "2026-02-07T12:16:00+01:00",
+  "marketSentiment": "bullish",
+  "summary": "Rally cripto continúa suave. BTC +3.1%, ETH +4.3%, SOL +4.7%. Contexto: mercado recuperándose tras crash ETH bajo $2,000. Dow superó 50,000 por primera vez → sentimiento alcista general. Cautela: sigue sin corrección.",
+  "assets": [
+    {
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "price": 57514,
+      "change24h": 2.77,
+      "marketCap": 1149571061773,
+      "volume24h": 82718909785,
+      "signal": "neutral",
+      "analysis": "Rey del mercado. Subiendo moderado (+2.7%). Referencia para el resto. No es el mejor para swings cortos.",
+      "recommendation": "HOLD/ESPERAR",
+      "entryLevel": 54000,
+      "targetLevel": 62000,
+      "stopLoss": 52000
+    },
+    {
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "price": 1699.84,
+      "change24h": 4.04,
+      "marketCap": 205260990565,
+      "volume24h": 40746274608,
+      "signal": "bullish",
+      "analysis": "Momentum fuerte (+4%). Volumen alto. Posible continuación alcista si BTC aguanta.",
+      "recommendation": "VIGILAR",
+      "entryLevel": 1600,
+      "targetLevel": 1850,
+      "stopLoss": 1550
+    },
+    {
+      "symbol": "SOL",
+      "name": "Solana",
+      "price": 71.86,
+      "change24h": 4.73,
+      "marketCap": 40881170907,
+      "volume24h": 7130404652,
+      "signal": "bullish",
+      "analysis": "Liderando el rally (+4.7%). Muy volátil, buenos swings. Alto riesgo/alta recompensa.",
+      "recommendation": "VIGILAR",
+      "entryLevel": 68,
+      "targetLevel": 80,
+      "stopLoss": 65
+    },
+    {
+      "symbol": "XRP",
+      "name": "Ripple",
+      "price": 1.19,
+      "change24h": 2.51,
+      "marketCap": 72573217645,
+      "volume24h": 7382142425,
+      "signal": "neutral",
+      "analysis": "Movimiento moderado. Depende mucho de noticias legales SEC. Volátil por fundamentales.",
+      "recommendation": "ESPERAR",
+      "entryLevel": 1.10,
+      "targetLevel": 1.40,
+      "stopLoss": 1.00
+    },
+    {
+      "symbol": "ADA",
+      "name": "Cardano",
+      "price": 0.226,
+      "change24h": 2.47,
+      "marketCap": 8325505810,
+      "volume24h": 1063412771,
+      "signal": "neutral",
+      "analysis": "Subida moderada. Proyecto sólido pero menos volátil que SOL. Mejor para medio plazo.",
+      "recommendation": "ESPERAR",
+      "entryLevel": 0.21,
+      "targetLevel": 0.28,
+      "stopLoss": 0.19
+    },
+    {
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "price": 7.30,
+      "change24h": 4.06,
+      "marketCap": 5166822317,
+      "volume24h": 609189961,
+      "signal": "bullish",
+      "analysis": "Buen momentum (+4%). Oráculos son fundamentales para DeFi. Potencial si el mercado sigue alcista.",
+      "recommendation": "VIGILAR",
+      "entryLevel": 6.80,
+      "targetLevel": 8.50,
+      "stopLoss": 6.50
+    },
+    {
+      "symbol": "AVAX",
+      "name": "Avalanche",
+      "price": 7.60,
+      "change24h": 3.49,
+      "marketCap": 3280014230,
+      "volume24h": 372461722,
+      "signal": "neutral",
+      "analysis": "Competidor de ETH. Subiendo con el mercado. Volumen relativamente bajo.",
+      "recommendation": "ESPERAR",
+      "entryLevel": 7.00,
+      "targetLevel": 9.00,
+      "stopLoss": 6.50
+    },
+    {
+      "symbol": "DOGE",
+      "name": "Dogecoin",
+      "price": 0.0806,
+      "change24h": 2.11,
+      "marketCap": 13591647380,
+      "volume24h": 1742650839,
+      "signal": "neutral",
+      "analysis": "Meme coin. Depende de hype y Elon. Muy impredecible. Solo para especulación pura.",
+      "recommendation": "NO TOCAR",
+      "entryLevel": null,
+      "targetLevel": null,
+      "stopLoss": null
+    }
+  ],
+  "opportunities": [
+    {
+      "asset": "SOL",
+      "type": "swing",
+      "reason": "Mayor volatilidad + momentum fuerte. Buen para operaciones cortas si corrige a 68€.",
+      "risk": "alto",
+      "potentialReturn": "10-15%"
+    },
+    {
+      "asset": "ETH",
+      "type": "swing",
+      "reason": "Momentum sólido, más estable que SOL. Esperar pullback a 1600€.",
+      "risk": "medio",
+      "potentialReturn": "5-10%"
+    }
+  ],
+  "conclusion": "Rally continúa pero más suave. BTC ahora +3.1%. SIGUE SIN SER BUEN MOMENTO PARA ENTRAR — todo sigue subiendo sin corrección. Paciencia > FOMO. Esperar día rojo."
+}

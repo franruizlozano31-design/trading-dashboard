@@ -1,0 +1,17 @@
+{
+  "lastUpdate": "2026-02-07T13:59:00+01:00",
+  "crypto": {
+    "BTC": { "eur": 58325, "change24h": 3.73 },
+    "ETH": { "eur": 1726.57, "change24h": 6.18 },
+    "SOL": { "eur": 72.93, "change24h": 5.56 },
+    "LINK": { "eur": 7.46, "change24h": 6.10 },
+    "AAVE": { "eur": 95.64, "change24h": 6.31 }
+  },
+  "stocks": {
+    "NVDA": { "usd": 185.41, "eur": 171.68, "change": 7.92 },
+    "TSLA": { "usd": 411.11, "eur": 380.66, "change": 3.50 }
+  },
+  "fx": {
+    "EURUSD": 1.08
+  }
+}

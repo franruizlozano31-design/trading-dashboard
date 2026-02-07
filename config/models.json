@@ -1,0 +1,60 @@
+{
+  "version": "1.1",
+  "description": "Configuración multi-modelo para optimizar coste/rendimiento",
+  "lastUpdate": "2026-02-07T16:50:00+01:00",
+  
+  "defaultModel": {
+    "id": "groq/deepseek-r1-distill-llama-70b",
+    "name": "Groq R1",
+    "use": "Cualquier interacción fuera del flujo de trading",
+    "note": "Modelo por defecto para conversación general"
+  },
+  
+  "models": {
+    "fast": {
+      "id": "deepseek/deepseek-chat",
+      "name": "DeepSeek V3",
+      "use": ["fetch_prices", "update_json", "screener_basic", "simple_queries"],
+      "cost": "muy_bajo",
+      "speed": "muy_rapido",
+      "reasoning": false
+    },
+    "analysis": {
+      "id": "groq/deepseek-r1-distill-llama-70b",
+      "name": "Groq DeepSeek R1 Distill",
+      "use": ["modular_analysis", "technical_analysis", "opportunity_detection", "score_calculation"],
+      "cost": "bajo",
+      "speed": "rapido",
+      "reasoning": true
+    },
+    "critical": {
+      "id": "anthropic/claude-sonnet-4-20250514",
+      "name": "Claude Sonnet",
+      "use": ["critical_decisions", "risk_verification", "large_trades"],
+      "cost": "medio",
+      "speed": "medio",
+      "reasoning": true,
+      "trigger": "score > 5 OR score < -3 OR trade_value > 30"
+    }
+  },
+  
+  "workflow": {
+    "update_command": {
+      "step1": { "task": "fetch_prices", "model": "fast" },
+      "step2": { "task": "screener", "model": "fast" },
+      "step3": { "task": "modular_analysis", "model": "analysis" },
+      "step4": { "task": "verify_if_critical", "model": "critical", "condition": "optional" }
+    },
+    "trade_command": {
+      "step1": { "task": "get_price", "model": "fast" },
+      "step2": { "task": "risk_check", "model": "analysis" },
+      "step3": { "task": "execute_if_approved", "model": "fast" }
+    }
+  },
+  
+  "thresholds": {
+    "critical_review_score": 5,
+    "critical_trade_value_eur": 30,
+    "max_daily_critical_calls": 5
+  }
+}

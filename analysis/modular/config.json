@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "description": "Sistema Modular de Votación para Trading",
+  "modules": {
+    "news": {
+      "name": "Análisis de Noticias",
+      "weight": 0.25,
+      "description": "Sentimiento de mercado basado en noticias"
+    },
+    "technical": {
+      "name": "Análisis Técnico Avanzado",
+      "weight": 0.30,
+      "description": "Z-score, DeltaZ, RSI, MACD, Bollinger"
+    },
+    "momentum": {
+      "name": "Momentum & Volumen",
+      "weight": 0.20,
+      "description": "Fuerza del movimiento y volumen"
+    },
+    "catalyst": {
+      "name": "Catalizadores",
+      "weight": 0.15,
+      "description": "Eventos próximos que pueden mover precio"
+    },
+    "risk": {
+      "name": "Gestión de Riesgo",
+      "weight": 0.10,
+      "description": "Volatilidad y drawdown potencial"
+    }
+  },
+  "thresholds": {
+    "buy": 6,
+    "sell": -4
+  },
+  "scoreRange": {
+    "min": -10,
+    "max": 10
+  }
+}
