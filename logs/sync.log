@@ -113,3 +113,18 @@
 [2026-02-07 18:59:00]   M scripts/auto_sync.py
 [2026-02-07 18:59:00] Mensaje de commit: Auto-sync 2026-02-07 18:59:00 | Documentación actualizada
 [2026-02-07 18:59:00] Agregando cambios...
+[2026-02-07 18:59:00] Haciendo commit...
+[2026-02-07 18:59:00] Commit realizado: [main 841b254] Auto-sync 2026-02-07 18:59:00 | Documentación actualizada
+ 4 files changed, 143 insertions(+), 32 deletions(-)
+[2026-02-07 18:59:00] Haciendo push a GitHub...
+[2026-02-07 18:59:01] Push exitoso: 
+[2026-02-07 18:59:01] === Auto-sync completado ===
+[2026-02-07 19:02:32] === Iniciando auto-sync ===
+[2026-02-07 19:02:32] Encontrados 5 archivo(s) cambiado(s):
+[2026-02-07 19:02:32]   M nalysis/modular/BTC.json
+[2026-02-07 19:02:32]   M data/portfolio.json
+[2026-02-07 19:02:32]   M data/prices.json
+[2026-02-07 19:02:32]   M logs/sync.log
+[2026-02-07 19:02:32]   ?? scripts/update_and_sync.sh
+[2026-02-07 19:02:32] Mensaje de commit: Auto-sync 2026-02-07 19:02:32 | Precios actualizados | Portfolio modificado | Configuración modificada
+[2026-02-07 19:02:32] Agregando cambios...

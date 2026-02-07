@@ -4,7 +4,7 @@
     "initialCapital": 100,
     "currency": "EUR",
     "phase": "paper",
-    "lastSync": "2026-02-07T18:44:27+01:00"
+    "lastSync": "2026-02-07T19:02:29+01:00"
   },
   "config": {
     "commissions": {
@@ -12,21 +12,21 @@
         "name": "Bit2Me",
         "type": "crypto",
         "fee": 0.005,
-        "note": "0.5% por operación"
+        "note": "0.5% por operaci\u00f3n"
       },
       "degiro": {
         "name": "DEGIRO",
         "type": "stocks",
-        "baseFee": 1.00,
-        "note": "1€ + 0.004$/acción"
+        "baseFee": 1.0,
+        "note": "1\u20ac + 0.004$/acci\u00f3n"
       }
     }
   },
   "balance": {
     "available": 49.75,
-    "invested": 50.23,
-    "total": 99.98,
-    "totalWithGains": 99.98
+    "invested": 50.08580192000001,
+    "total": 99.83580192000001,
+    "totalWithGains": 99.83580192000001
   },
   "positions": [
     {
@@ -37,13 +37,13 @@
       "broker": "Bit2Me",
       "quantity": 0.000854,
       "entryPrice": 58560,
-      "entryValue": 50.00,
+      "entryValue": 50.0,
       "entryDate": "2026-02-07T13:28:00+01:00",
       "commission": 0.25,
-      "currentPrice": 58811.65,
-      "currentValue": 50.23,
-      "profitLoss": 0.23,
-      "profitLossPct": 0.46,
+      "currentPrice": 58648.48,
+      "currentValue": 50.08580192000001,
+      "profitLoss": 0.08580192000000864,
+      "profitLossPct": 0.17160384000001727,
       "status": "open"
     }
   ],
@@ -55,11 +55,11 @@
       "type": "BUY",
       "quantity": 0.000854,
       "price": 58560,
-      "value": 50.00,
+      "value": 50.0,
       "commission": 0.25,
       "broker": "Bit2Me",
       "result": 0,
-      "note": "Primera operación de prueba. Entrada en rally - contra mi recomendación pero para testear sistema."
+      "note": "Primera operaci\u00f3n de prueba. Entrada en rally - contra mi recomendaci\u00f3n pero para testear sistema."
     }
   ],
   "stats": {
@@ -69,7 +69,7 @@
     "winningTrades": 0,
     "losingTrades": 0,
     "totalCommissions": 0.25,
-    "totalProfitLoss": 0.23,
+    "totalProfitLoss": 0.08580192000000864,
     "winRate": 0
   }
 }

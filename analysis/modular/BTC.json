@@ -1,24 +1,35 @@
 {
   "asset": "BTC",
   "name": "Bitcoin",
-  "lastUpdate": "2026-02-07T18:44:27+01:00",
-  "price": 58811.65,
-  "change24h": -2.56,
-  
+  "lastUpdate": "2026-02-07T19:02:29+01:00",
+  "price": 58648.48,
+  "change24h": -2.165,
   "modules": {
     "news": {
       "score": 3,
-      "reasoning": "Dow 50,000 histórico. BlackRock ETF récord. Recuperación post-crash. Sentimiento positivo.",
+      "reasoning": "Dow 50,000 hist\u00f3rico. BlackRock ETF r\u00e9cord. Recuperaci\u00f3n post-crash. Sentimiento positivo.",
       "factors": [
-        {"factor": "Dow 50,000", "impact": "+1"},
-        {"factor": "BlackRock ETF", "impact": "+2"},
-        {"factor": "Recuperación", "impact": "+1"},
-        {"factor": "Volatilidad", "impact": "-1"}
+        {
+          "factor": "Dow 50,000",
+          "impact": "+1"
+        },
+        {
+          "factor": "BlackRock ETF",
+          "impact": "+2"
+        },
+        {
+          "factor": "Recuperaci\u00f3n",
+          "impact": "+1"
+        },
+        {
+          "factor": "Volatilidad",
+          "impact": "-1"
+        }
       ]
     },
     "technical": {
       "score": -1,
-      "reasoning": "BTC retrocedió -2.56% desde ayer (58,654→58,812). Pullback continuando pero recuperando desde mínimos. Corto plazo neutral. Largo plazo alcista.",
+      "reasoning": "BTC retrocedi\u00f3 -2.17% desde ayer. Pullback fuerte. Corto plazo bajista. Largo plazo alcista.",
       "shortTerm": {
         "timeframe": "24h-7d",
         "score": -2,
@@ -30,7 +41,7 @@
           "macd": "neutral",
           "bollinger_position": "mitad_banda"
         },
-        "analysis": "Retroceso desde máximo. Z-score bajando. RSI 56 neutral. Enfriando."
+        "analysis": "Retroceso desde m\u00e1ximo. Z-score bajando. RSI 56 neutral. Enfriando."
       },
       "longTerm": {
         "timeframe": "30d-90d",
@@ -45,46 +56,52 @@
           "support_key": 52000,
           "resistance_key": 65000
         },
-        "analysis": "Tendencia macro alcista. Soporte 52,000€."
+        "analysis": "Tendencia macro alcista. Soporte 52,000\u20ac."
       },
-      "divergence": "Corto enfriando vs largo alcista = Pullback en proceso. Posible oportunidad si baja más."
+      "divergence": "Corto enfriando vs largo alcista = Pullback en proceso. Posible oportunidad si baja m\u00e1s."
     },
     "momentum": {
       "score": -1,
-      "reasoning": "Momentum negativo pero recuperando. Caída -2.56% en 24h pero subiendo desde mínimos. Volumen normal.",
-      "shortTerm": { "roc_24h": -2.56, "strength": "negativa" },
-      "longTerm": { "roc_30d": 12.0, "strength": "positivo" }
+      "reasoning": "Momentum negativo. Ca\u00edda -2.17% en 24h. Volumen normal.",
+      "shortTerm": {
+        "roc_24h": -2.165,
+        "strength": "negativa"
+      },
+      "longTerm": {
+        "roc_30d": 12.0,
+        "strength": "positivo"
+      }
     },
     "catalyst": {
       "score": 2,
-      "reasoning": "ETF flows positivos. Sin evento específico.",
+      "reasoning": "ETF flows positivos. Sin evento espec\u00edfico.",
       "upcoming_events": []
     },
     "risk": {
       "score": -1,
-      "reasoning": "Riesgo moderado. Menos volátil que altcoins.",
-      "metrics": { "volatility": "moderada", "max_drawdown": "10-15%" }
+      "reasoning": "Riesgo moderado. Menos vol\u00e1til que altcoins.",
+      "metrics": {
+        "volatility": "moderada",
+        "max_drawdown": "10-15%"
+      }
     }
   },
-  
   "calculation": {
-    "news": "3 × 0.25 = 0.75",
-    "technical": "-1 × 0.30 = -0.30",
-    "momentum": "-1 × 0.20 = -0.20",
-    "catalyst": "2 × 0.15 = 0.30",
-    "risk": "-1 × 0.10 = -0.10",
+    "news": "3 \u00d7 0.25 = 0.75",
+    "technical": "-1 \u00d7 0.30 = -0.30",
+    "momentum": "-1 \u00d7 0.20 = -0.20",
+    "catalyst": "2 \u00d7 0.15 = 0.30",
+    "risk": "-1 \u00d7 0.10 = -0.10",
     "total": 0.45
   },
-  
   "finalScore": 0.45,
   "decision": "HOLD",
-  "reasoning": "Score +0.45. BTC en pullback -2.56% desde ayer pero recuperando. Tu posición: +0.46% P/L, positiva tras recuperación.",
-  
+  "reasoning": "Score 0.45. BTC -2.17% desde ayer. Tu posici\u00f3n: +0.17% P/L.",
   "recommendation": {
-    "action": "MANTENER POSICIÓN",
+    "action": "MANTENER POSICI\u00d3N",
     "entry_level": 54000,
     "target": 65000,
     "stop_loss": 52000,
-    "note": "Pullback esperado. Si baja a 54,000€ sería buena adición."
+    "note": "Pullback esperado. Si baja a 54,000\u20ac ser\u00eda buena adici\u00f3n."
   }
 }
