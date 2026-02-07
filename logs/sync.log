@@ -36,3 +36,16 @@
 [2026-02-07 18:40:02]   ?? logs/cron.log
 [2026-02-07 18:40:02] Mensaje de commit: Auto-sync 2026-02-07 18:40:02 | Cambios varios
 [2026-02-07 18:40:02] Agregando cambios...
+[2026-02-07 18:40:02] Haciendo commit...
+[2026-02-07 18:40:02] Commit realizado: [main 8b86e5e] Auto-sync 2026-02-07 18:40:02 | Cambios varios
+ 2 files changed, 14 insertions(+)
+ create mode 100644 logs/cron.log
+[2026-02-07 18:40:02] Haciendo push a GitHub...
+[2026-02-07 18:40:02] Push exitoso: 
+[2026-02-07 18:40:02] === Auto-sync completado ===
+[2026-02-07 18:45:01] === Iniciando auto-sync ===
+[2026-02-07 18:45:01] Encontrados 2 archivo(s) cambiado(s):
+[2026-02-07 18:45:01]   M ogs/cron.log
+[2026-02-07 18:45:01]   M logs/sync.log
+[2026-02-07 18:45:01] Mensaje de commit: Auto-sync 2026-02-07 18:45:01 | Cambios varios
+[2026-02-07 18:45:01] Agregando cambios...
