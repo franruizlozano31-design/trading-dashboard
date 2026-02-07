@@ -3,7 +3,8 @@
     "created": "2026-02-07",
     "initialCapital": 100,
     "currency": "EUR",
-    "phase": "paper"
+    "phase": "paper",
+    "lastSync": "2026-02-07T18:38:52+01:00"
   },
   "config": {
     "commissions": {
