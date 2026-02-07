@@ -1,9 +1,9 @@
 {
   "asset": "BTC",
   "name": "Bitcoin",
-  "lastUpdate": "2026-02-07T13:59:00+01:00",
-  "price": 58325,
-  "change24h": 3.73,
+  "lastUpdate": "2026-02-07T18:11:42+01:00",
+  "price": 58280.83,
+  "change24h": -2.16,
   
   "modules": {
     "news": {
@@ -18,7 +18,7 @@
     },
     "technical": {
       "score": -1,
-      "reasoning": "BTC retrocedió desde máximo (58,654→58,325). Corto plazo enfriando. Largo plazo alcista.",
+      "reasoning": "BTC retrocedió -2.16% desde ayer (58,654→58,281). Pullback en curso tras rally. Corto plazo bajista. Largo plazo alcista.",
       "shortTerm": {
         "timeframe": "24h-7d",
         "score": -2,
@@ -50,9 +50,9 @@
       "divergence": "Corto enfriando vs largo alcista = Pullback en proceso. Posible oportunidad si baja más."
     },
     "momentum": {
-      "score": 2,
-      "reasoning": "Momentum desacelerando. De +4.6% a +3.7%. Volumen normal.",
-      "shortTerm": { "roc_24h": 3.73, "strength": "moderada" },
+      "score": -1,
+      "reasoning": "Momentum negativo. Caída -2.16% en 24h. Volumen normal.",
+      "shortTerm": { "roc_24h": -2.16, "strength": "negativa" },
       "longTerm": { "roc_30d": 12.0, "strength": "positivo" }
     },
     "catalyst": {
@@ -70,15 +70,15 @@
   "calculation": {
     "news": "3 × 0.25 = 0.75",
     "technical": "-1 × 0.30 = -0.30",
-    "momentum": "2 × 0.20 = 0.40",
+    "momentum": "-1 × 0.20 = -0.20",
     "catalyst": "2 × 0.15 = 0.30",
     "risk": "-1 × 0.10 = -0.10",
-    "total": 1.05
+    "total": 0.45
   },
   
-  "finalScore": 1.05,
+  "finalScore": 0.45,
   "decision": "HOLD",
-  "reasoning": "Score +1.05. BTC enfriando desde máximo. Tu posición: ligeramente negativa pero dentro de lo normal.",
+  "reasoning": "Score +0.45. BTC en pullback -2.16% desde ayer. Tu posición: -0.46% P/L, dentro de lo normal para volatilidad.",
   
   "recommendation": {
     "action": "MANTENER POSICIÓN",

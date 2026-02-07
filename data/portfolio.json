@@ -23,9 +23,9 @@
   },
   "balance": {
     "available": 49.75,
-    "invested": 50.00,
-    "total": 99.75,
-    "totalWithGains": 99.75
+    "invested": 49.77,
+    "total": 99.52,
+    "totalWithGains": 99.52
   },
   "positions": [
     {
@@ -39,10 +39,10 @@
       "entryValue": 50.00,
       "entryDate": "2026-02-07T13:28:00+01:00",
       "commission": 0.25,
-      "currentPrice": 58560,
-      "currentValue": 50.00,
-      "profitLoss": 0,
-      "profitLossPct": 0,
+      "currentPrice": 58280.83,
+      "currentValue": 49.77,
+      "profitLoss": -0.23,
+      "profitLossPct": -0.46,
       "status": "open"
     }
   ],
@@ -68,7 +68,7 @@
     "winningTrades": 0,
     "losingTrades": 0,
     "totalCommissions": 0.25,
-    "totalProfitLoss": 0,
+    "totalProfitLoss": -0.23,
     "winRate": 0
   }
 }
