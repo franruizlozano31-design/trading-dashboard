@@ -1,19 +1,19 @@
-# 🔄 Sistema de Auto-Sync GitHub
+# 🔄 Sistema de Sync GitHub (Manual)
 
 ## 📋 **Resumen**
-Sistema automático que sincroniza todos los cambios del dashboard de trading con GitHub cada 5 minutos y tras actualizaciones manuales.
+Sistema **manual** que sincroniza los cambios del dashboard de trading con GitHub cuando se solicita explícitamente. Eliminado el cron job automático para mayor control.
 
 ## 🏗️ **Arquitectura**
 
 ### **Componentes:**
-1. **`scripts/auto_sync.py`** - Script principal Python
+1. **`scripts/auto_sync.py`** - Script principal Python (ejecución manual)
 2. **`scripts/sync_now.sh`** - Wrapper Bash para ejecución manual
-3. **Cron job** - Ejecución automática cada 5 minutos
-4. **GitHub Token** - Autenticación segura
+3. **GitHub Token** - Autenticación segura
+4. **Comandos manuales** - Control total del usuario
 
-### **Flujo de trabajo:**
+### **Flujo de trabajo (MANUAL):**
 ```
-[Cambios en archivos] → [Detección automática] → [Commit inteligente] → [Push a GitHub] → [GitHub Pages actualizado]
+[Tú o Paco actualiza datos] → [Ejecutas comando sync] → [Detección de cambios] → [Commit inteligente] → [Push a GitHub] → [GitHub Pages actualizado]
 ```
 
 ## ⚙️ **Configuración**
@@ -24,20 +24,14 @@ Sistema automático que sincroniza todos los cambios del dashboard de trading co
 - **Almacenamiento**: En remote URL de git (seguro para uso local)
 - **Nombre**: `OpenClaw Auto-Sync - Trading Dashboard`
 
-### **Cron Job:**
-```bash
-*/5 * * * * cd /home/fran/.openclaw/workspace/trading && /usr/bin/python3 scripts/auto_sync.py >> logs/cron.log 2>&1
-```
+### **Modo operativo:**
+- **Manual**: Solo se ejecuta cuando tú lo pides
+- **Sin cron jobs**: Eliminado el ejecución automática
+- **Control total**: Decides cuándo sincronizar
 
-## 🚀 **Uso**
+## 🚀 **Uso (EXCLUSIVAMENTE MANUAL)**
 
-### **Sync automático (cada 5 minutos):**
-- Se ejecuta automáticamente vía cron
-- Detecta cambios en cualquier archivo
-- Genera mensajes de commit descriptivos
-- Hace push a `main` branch
-
-### **Sync manual inmediato:**
+### **Opción 1: Desde terminal**
 ```bash
 # Desde el directorio trading/
 ./scripts/sync_now.sh
@@ -46,11 +40,34 @@ Sistema automático que sincroniza todos los cambios del dashboard de trading co
 python3 scripts/auto_sync.py
 ```
 
-### **Desde OpenClaw (Paco):**
+### **Opción 2: Desde OpenClaw (Paco)**
 ```python
-# Después de actualizar datos
+# Cuando actualizo datos y tú me pides "sube a GitHub"
 exec("cd /home/fran/.openclaw/workspace/trading && ./scripts/sync_now.sh")
 ```
+
+### **Opciones del script:**
+```bash
+# Sync normal (detecta cambios y hace commit+push)
+python3 scripts/auto_sync.py
+
+# Configurar cron job automático (NO RECOMENDADO)
+python3 scripts/auto_sync.py --setup-cron
+
+# Eliminar cron job automático
+python3 scripts/auto_sync.py --remove-cron
+
+# Ayuda
+python3 scripts/auto_sync.py --help
+```
+
+### **Cuándo ejecutar sync:**
+- **Después de actualizar precios** (cuando pides "actualiza la web")
+- **Después de modificar portfolio** (nuevas operaciones)
+- **Después de actualizar análisis** (cambios en decisiones)
+- **Cuando quieras backup** en GitHub
+
+**⚠️ Sin ejecuciones automáticas** - tú controlas cuándo se sincroniza.
 
 ## 📊 **Mensajes de Commit Inteligentes**
 
@@ -69,7 +86,7 @@ trading/
 │   └── sync_now.sh       # Wrapper Bash
 ├── logs/
 │   ├── sync.log          # Log del script principal
-│   └── cron.log          # Log del cron job
+│   └── cron.log          # Historial de ejecuciones automáticas (vacío ahora)
 └── docs/
     └── AUTO_SYNC.md      # Esta documentación
 ```
@@ -78,11 +95,8 @@ trading/
 
 ### **Ver logs:**
 ```bash
-# Logs del script
+# Logs del script manual
 tail -f logs/sync.log
-
-# Logs del cron job
-tail -f logs/cron.log
 
 # Ver últimos commits
 git log --oneline -10
@@ -90,14 +104,17 @@ git log --oneline -10
 
 ### **Verificar estado:**
 ```bash
-# Verificar cron job
-crontab -l | grep auto_sync
+# Verificar que NO hay cron jobs (debe estar vacío)
+crontab -l | grep -i "auto_sync" || echo "✅ Sin cron jobs automáticos"
 
 # Verificar token configurado
 git remote -v
 
 # Verificar cambios pendientes
 git status
+
+# Verificar última actualización
+curl -s "https://franruizlozano31-design.github.io/trading-dashboard/data/prices.json" | grep -o '"lastUpdate":"[^"]*"' | head -1
 ```
 
 ## 🛠️ **Mantenimiento**
@@ -107,9 +124,16 @@ git status
 git remote set-url origin https://franruizlozano31-design:NUEVO_TOKEN@github.com/franruizlozano31-design/trading-dashboard.git
 ```
 
-### **Reconfigurar cron job:**
+### **Gestionar cron job (OPCIONAL - no recomendado):**
 ```bash
+# Activar automático (NO USAR a menos que quieras)
 python3 scripts/auto_sync.py --setup-cron
+
+# Desactivar automático
+python3 scripts/auto_sync.py --remove-cron
+
+# Verificar estado
+crontab -l | grep -i "auto_sync" || echo "✅ Modo manual activado"
 ```
 
 ### **Debugging:**
@@ -146,6 +170,12 @@ https://franruizlozano31-design.github.io/trading-dashboard/dashboard.html
 - No requiere acción manual
 
 ## 📝 **Historial de Versiones**
+
+### **v1.1 (2026-02-07) - MODO MANUAL**
+- **Eliminado cron job automático** → solo ejecución manual
+- **Control total del usuario** - tú decides cuándo sincronizar
+- **Añadidas opciones** `--setup-cron`, `--remove-cron`, `--help`
+- **Documentación actualizada** para reflejar modo manual
 
 ### **v1.0 (2026-02-07)**
 - Sistema inicial de auto-sync

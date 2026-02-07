@@ -186,7 +186,8 @@ def setup_cron_job():
         try:
             returncode, stdout, stderr = run_command(f"crontab {temp_file}", cwd=None)
             if returncode == 0:
-                log_message("Cron job configurado para ejecución cada 5 minutos.")
+                log_message("⚠️ Cron job configurado para ejecución cada 5 minutos (automático).")
+                log_message("⚠️ Para eliminar: python3 scripts/auto_sync.py --remove-cron")
             else:
                 log_message(f"Error configurando cron: {stderr}")
         finally:
@@ -194,12 +195,67 @@ def setup_cron_job():
     else:
         log_message("Cron job ya está configurado.")
 
+def remove_cron_job():
+    """Elimina cron job del sistema."""
+    log_message("=== Eliminando cron job ===")
+    
+    # Obtener crontab actual
+    returncode, stdout, stderr = run_command("crontab -l", cwd=None)
+    
+    if returncode != 0:
+        log_message("No hay cron jobs configurados.")
+        return True
+    
+    # Filtrar línea de auto_sync
+    lines = stdout.split("\n")
+    new_lines = [line for line in lines if "auto_sync.py" not in line]
+    
+    if len(new_lines) == len(lines):
+        log_message("No se encontró cron job para auto_sync.")
+        return True
+    
+    # Crear nuevo crontab sin la línea
+    new_cron = "\n".join(new_lines) + ("\n" if new_lines else "")
+    
+    # Guardar en archivo temporal
+    import tempfile
+    with tempfile.NamedTemporaryFile(mode="w", delete=False) as f:
+        f.write(new_cron)
+        temp_file = f.name
+    
+    try:
+        returncode, stdout, stderr = run_command(f"crontab {temp_file}", cwd=None)
+        if returncode == 0:
+            log_message("✅ Cron job eliminado exitosamente.")
+            log_message("   El sistema ahora funciona solo cuando se ejecuta manualmente.")
+            return True
+        else:
+            log_message(f"❌ Error eliminando cron: {stderr}")
+            return False
+    finally:
+        os.unlink(temp_file)
+
 if __name__ == "__main__":
     setup_logging()
     
     # Verificar argumentos
-    if len(sys.argv) > 1 and sys.argv[1] == "--setup-cron":
-        setup_cron_job()
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "--setup-cron":
+            setup_cron_job()
+        elif sys.argv[1] == "--remove-cron":
+            remove_cron_job()
+        elif sys.argv[1] == "--help":
+            print("Uso: python3 auto_sync.py [OPCIÓN]")
+            print()
+            print("Opciones:")
+            print("  (sin opciones)     Ejecuta sync manual si hay cambios")
+            print("  --setup-cron       Configura cron job automático cada 5 min")
+            print("  --remove-cron      Elimina cron job automático")
+            print("  --help             Muestra esta ayuda")
+        else:
+            print(f"Opción desconocida: {sys.argv[1]}")
+            print("Usa --help para ver opciones disponibles")
+            sys.exit(1)
     else:
         success = auto_commit_and_push()
         sys.exit(0 if success else 1)
