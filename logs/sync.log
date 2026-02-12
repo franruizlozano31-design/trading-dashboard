@@ -143,3 +143,17 @@
 [2026-02-07 20:06:15]   M logs/sync.log
 [2026-02-07 20:06:15] Mensaje de commit: Auto-sync 2026-02-07 20:06:15 | Precios actualizados | Portfolio modificado | Configuración modificada
 [2026-02-07 20:06:15] Agregando cambios...
+[2026-02-07 20:06:15] Haciendo commit...
+[2026-02-07 20:06:15] Commit realizado: [main 797bc96] Auto-sync 2026-02-07 20:06:15 | Precios actualizados | Portfolio modificado | Configuración modificada
+ 4 files changed, 41 insertions(+), 26 deletions(-)
+[2026-02-07 20:06:15] Haciendo push a GitHub...
+[2026-02-07 20:06:16] Push exitoso: 
+[2026-02-07 20:06:16] === Auto-sync completado ===
+[2026-02-12 18:20:32] === Iniciando auto-sync ===
+[2026-02-12 18:20:32] Encontrados 4 archivo(s) cambiado(s):
+[2026-02-12 18:20:32]   M nalysis/modular/BTC.json
+[2026-02-12 18:20:32]   M data/portfolio.json
+[2026-02-12 18:20:32]   M data/prices.json
+[2026-02-12 18:20:32]   M logs/sync.log
+[2026-02-12 18:20:32] Mensaje de commit: Auto-sync 2026-02-12 18:20:32 | Precios actualizados | Portfolio modificado | Configuración modificada
+[2026-02-12 18:20:32] Agregando cambios...
