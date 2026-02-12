@@ -1,0 +1,118 @@
+{
+  "version": "1.0",
+  "name": "Estrategia Agresiva de Corto Plazo",
+  "description": "Maximizar retornos con capital pequeño (<100€), alto riesgo aceptado",
+  "created": "2026-02-12",
+  
+  "capital": {
+    "initial": 100,
+    "currency": "EUR",
+    "maxPositionSizePercent": 30,
+    "minPositionSizeEur": 10,
+    "maxOpenPositions": 3
+  },
+  
+  "trading": {
+    "primaryMarket": "crypto",
+    "secondaryMarket": "stocks",
+    "timeframes": ["1m", "5m", "15m", "1h"],
+    "primaryTimeframe": "15m",
+    "holdingPeriodMaxHours": 24,
+    "holdingPeriodMinMinutes": 5
+  },
+  
+  "entryRules": {
+    "momentumThreshold": 4,
+    "volumeMultiplier": 1.5,
+    "rsiOversold": 35,
+    "rsiOverbought": 65,
+    "requiredIndicators": ["price_action", "volume", "trend"]
+  },
+  
+  "exitRules": {
+    "stopLossPercent": 1.5,
+    "takeProfitPercent": 4.0,
+    "trailingStopPercent": 2.0,
+    "breakevenAtPercent": 1.0,
+    "partialProfitAtPercent": 2.0,
+    "partialProfitPercent": 50
+  },
+  
+  "riskManagement": {
+    "maxDailyLossPercent": 5,
+    "maxConsecutiveLosses": 3,
+    "cooloffPeriodHours": 24,
+    "riskRewardRatio": 2.67,
+    "maxDrawdownPercent": 30,
+    "positionSizing": "fixed_fractional"
+  },
+  
+  "screener": {
+    "scanIntervalSeconds": 30,
+    "assetsToMonitor": 12,
+    "minVolatilityPercent": 2,
+    "maxVolatilityPercent": 15,
+    "volumeSpikeThreshold": 2.0
+  },
+  
+  "signals": {
+    "buyThreshold": 4,
+    "sellThreshold": -3,
+    "strongBuyThreshold": 7,
+    "strongSellThreshold": -5,
+    "confidenceThreshold": 0.6
+  },
+  
+  "performanceTargets": {
+    "monthlyReturnPercent": 20,
+    "weeklyReturnPercent": 5,
+    "winRatePercent": 55,
+    "profitFactor": 1.5,
+    "sharpeRatio": 1.0,
+    "maxDrawdownPercent": 30
+  },
+  
+  "compliance": {
+    "broker": "Bit2Me",
+    "cryptoCommissionPercent": 0.5,
+    "taxImplications": true,
+    "reportingRequired": true,
+    "regulatory": "CNMV/Hacienda"
+  },
+  
+  "automation": {
+    "semiAuto": true,
+    "alerts": ["telegram", "dashboard"],
+    "autoExecute": false,
+    "requireConfirmation": true,
+    "logAllActions": true
+  },
+  
+  "phases": {
+    "phase1": {
+      "name": "Paper Trading Intensivo",
+      "durationDays": 7,
+      "tradesTarget": 30,
+      "goal": "Win rate >55%, Profit factor >1.5"
+    },
+    "phase2": {
+      "name": "Capital Real Pequeño",
+      "durationDays": 14,
+      "capitalPercent": 50,
+      "goal": "Return >10%, Drawdown <15%"
+    },
+    "phase3": {
+      "name": "Escalado Controlado",
+      "durationDays": 30,
+      "capitalPercent": 100,
+      "goal": "Monthly return >20%"
+    }
+  },
+  
+  "monitoring": {
+    "dailyReview": true,
+    "weeklyAnalysis": true,
+    "metricsTracking": ["winRate", "profitFactor", "sharpe", "drawdown", "commissionImpact"],
+    "journalRequired": true
+  }
+}

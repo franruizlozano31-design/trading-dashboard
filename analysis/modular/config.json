@@ -1,39 +1,45 @@
 {
-  "version": "1.0",
-  "description": "Sistema Modular de Votación para Trading",
+  "version": "2.0",
+  "description": "Sistema Modular AGRESIVO para Trading de Corto Plazo",
   "modules": {
-    "news": {
-      "name": "Análisis de Noticias",
+    "technical_momentum": {
+      "name": "Análisis Técnico + Momentum",
+      "weight": 0.35,
+      "description": "RSI, MACD, Volumen, Momentum rápido"
+    },
+    "volume_analysis": {
+      "name": "Análisis de Volumen",
       "weight": 0.25,
-      "description": "Sentimiento de mercado basado en noticias"
+      "description": "Volumen relativo, flujos, liquidez"
     },
-    "technical": {
-      "name": "Análisis Técnico Avanzado",
-      "weight": 0.30,
-      "description": "Z-score, DeltaZ, RSI, MACD, Bollinger"
-    },
-    "momentum": {
-      "name": "Momentum & Volumen",
+    "news_sentiment": {
+      "name": "Sentimiento de Noticias",
       "weight": 0.20,
-      "description": "Fuerza del movimiento y volumen"
+      "description": "Noticias en tiempo real, Twitter, sentimiento"
     },
-    "catalyst": {
+    "catalyst_events": {
       "name": "Catalizadores",
       "weight": 0.15,
-      "description": "Eventos próximos que pueden mover precio"
+      "description": "Eventos próximos que pueden mover precio rápidamente"
     },
-    "risk": {
+    "risk_management": {
       "name": "Gestión de Riesgo",
-      "weight": 0.10,
-      "description": "Volatilidad y drawdown potencial"
+      "weight": 0.05,
+      "description": "Volatilidad y drawdown (reducido para estrategia agresiva)"
     }
   },
   "thresholds": {
-    "buy": 6,
-    "sell": -4
+    "buy": 4,
+    "sell": -3,
+    "strong_buy": 7,
+    "strong_sell": -5
   },
   "scoreRange": {
     "min": -10,
     "max": 10
-  }
+  },
+  "strategy": "aggressive_short_term",
+  "timeframe": "intraday",
+  "target_return_per_trade": 0.04,
+  "max_loss_per_trade": 0.015
 }

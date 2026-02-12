@@ -15,29 +15,29 @@
   },
   
   "screenerCriteria": {
-    "description": "Criterios para añadir activos automáticamente",
+    "description": "Criterios AGRESIVOS para añadir activos automáticamente",
     "crypto": {
-      "minChange24h": 5,
-      "minVolume24hEur": 100000000,
-      "maxAssets": 3
+      "minChange24h": 3,  // Reducido de 5% a 3% para más oportunidades
+      "minVolume24hEur": 50000000,  // Reducido para incluir más altcoins
+      "maxAssets": 5  // Aumentado para más diversificación
     },
     "stocks": {
-      "minChange": 4,
-      "minVolume": 50000000,
-      "maxAssets": 2
+      "minChange": 3,
+      "minVolume": 30000000,
+      "maxAssets": 3
     }
   },
   
   "screenerPool": {
-    "description": "Activos que el screener vigila para oportunidades",
-    "crypto": ["ADA", "XRP", "LINK", "AVAX", "DOT", "MATIC", "ATOM", "UNI", "AAVE", "DOGE"],
-    "stocks": ["TSLA", "AMD", "META", "GOOGL", "AAPL", "MSFT", "COIN", "AMZN"]
+    "description": "Activos VOLÁTILES que el screener vigila para oportunidades agresivas",
+    "crypto": ["XRP", "ADA", "DOT", "AVAX", "MATIC", "ATOM", "UNI", "LINK", "AAVE", "NEAR", "ALGO", "FTM", "APT", "ARB", "OP"],
+    "stocks": ["TSLA", "AMD", "META", "COIN", "NVDA", "SOFI", "HOOD", "PLTR"]
   },
   
   "currentActive": {
     "description": "Activos actualmente bajo análisis (base + screener)",
-    "base": ["BTC", "ETH", "SOL", "NVDA"],
-    "screener": ["LINK", "AAVE"],
-    "total": ["BTC", "ETH", "SOL", "NVDA", "LINK", "AAVE"]
+    "base": ["BTC", "ETH", "SOL", "XRP", "ADA"],  // Más criptos volátiles en base
+    "screener": ["DOT", "AVAX", "MATIC", "AAVE"],
+    "total": ["BTC", "ETH", "SOL", "XRP", "ADA", "DOT", "AVAX", "MATIC", "AAVE"]
   }
 }
