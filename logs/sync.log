@@ -173,3 +173,18 @@
 [2026-02-12 18:25:27]   ?? strategies/
 [2026-02-12 18:25:27] Mensaje de commit: Auto-sync 2026-02-12 18:25:27 | Configuración modificada
 [2026-02-12 18:25:27] Agregando cambios...
+[2026-02-12 18:25:27] Haciendo commit...
+[2026-02-12 18:25:27] Commit realizado: [main d047a23] Auto-sync 2026-02-12 18:25:27 | Configuración modificada
+ 6 files changed, 720 insertions(+), 34 deletions(-)
+ create mode 100644 config/aggressive_strategy.json
+ create mode 100644 scripts/aggressive_screener.py
+ create mode 100644 strategies/aggressive_short_term.md
+[2026-02-12 18:25:27] Haciendo push a GitHub...
+[2026-02-12 18:25:28] Push exitoso: 
+[2026-02-12 18:25:28] === Auto-sync completado ===
+[2026-02-12 18:27:26] === Iniciando auto-sync ===
+[2026-02-12 18:27:26] Encontrados 2 archivo(s) cambiado(s):
+[2026-02-12 18:27:26]   M ogs/sync.log
+[2026-02-12 18:27:26]   ?? strategies/IMPLEMENTATION_PLAN.md
+[2026-02-12 18:27:26] Mensaje de commit: Auto-sync 2026-02-12 18:27:26 | Documentación actualizada
+[2026-02-12 18:27:26] Agregando cambios...
